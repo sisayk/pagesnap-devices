@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PageSnap Devices privacy</title>
+<style>
+  :root { color-scheme: light dark; --text: light-dark(#1d1d1f, #f2f2f7); --bg: light-dark(#f5f5f7, #1c1c1e); --muted: light-dark(#6e6e73, #a1a1a6); --accent: light-dark(#0066cc, #64b0ff); }
+  body { max-width: 680px; margin: 0 auto; padding: 32px 20px 48px; line-height: 1.55; background: var(--bg); color: var(--text); font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 26px 0 6px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>PageSnap Devices privacy</h1>
+<p class="muted">Last updated November 8, 2026. Short version: everything stays on your computer.</p>
+
+<h2>What it stores</h2>
+<p>Your settings, favorite devices and custom devices. They're saved only in your browser, and removing the extension deletes them. Screenshots aren't stored at all: they're saved where you download them, or passed to PageSnap Pro if you ask.</p>
+
+<h2>What it sends</h2>
+<p>Nothing to us or anyone else. There are no accounts, no analytics, no ads and no tracking, and the extension has no server. Pages you open in the simulator load from their own websites, the same as in a normal tab, and those sites have their own privacy policies. They receive a mobile browser identification when you simulate a mobile device.</p>
+
+<h2>Site access</h2>
+<p>The extension asks for nothing at install. The first time you open a site in the simulator, it asks once for access to all sites. This lets it load sites in a device frame, and the browser's screenshot feature requires it. You can remove access any time from the extension's details page.</p>
+<p>The browser describes this as reading and changing your data. Here is what the extension actually does with that access:</p>
+<ul>
+  <li>In the simulator's own tab, it removes the headers that stop a site loading in a frame, and sets the mobile browser identification. Other tabs aren't affected.</li>
+  <li>A small script starts on each page you visit and stops immediately unless it's inside the simulator. Inside, it sets up the simulated device, adds touch scrolling, and tells the simulator the address and title of the page.</li>
+  <li>When you take a screenshot, it captures the simulator tab. It only does this when you ask.</li>
+</ul>
+<p>It doesn't read or keep page content, and it doesn't record your browsing. When you click the toolbar icon, it reads that tab's address to open it in the simulator.</p>
+
+<h2>PageSnap Pro</h2>
+<p>If you choose Annotate or "Open in PageSnap editor", the screenshot, page address and device name go directly to the PageSnap Pro extension in your browser. They don't leave your computer.</p>
+
+<h2>Links</h2>
+<p>"Get PageSnap Pro" opens the browser's extension store, and "Buy me a coffee" opens Buy Me a Coffee, only when you click them. Those websites have their own privacy policies.</p>
+
+<h2>Questions</h2>
+<p>Email <a href="mailto:sisay.kelka@gmail.com">sisay.kelka@gmail.com</a>.</p>
+</body>
+</html>
